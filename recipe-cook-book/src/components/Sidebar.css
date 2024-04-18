@@ -1,0 +1,16 @@
+.sidebar {
+  width: 10%;
+  height: 100vh;
+  background-color: rgba(219, 247, 255, 0.237);
+  position: fixed;
+  top: 0;
+}
+
+.sidebar-link {
+  margin: 20px 0;
+}
+
+.menu {
+  margin-top: 180px;
+  list-style-type: none;
+}

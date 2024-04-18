@@ -1,7 +1,9 @@
+import "./Footer.css";
+
 function Footer() {
   return (
-    <footer>
-      <p>Here goes the Footer</p>
+    <footer className="footer">
+      <h2>FOLLOW ON SOCIALS</h2>
     </footer>
   );
 }

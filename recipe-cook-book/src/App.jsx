@@ -3,19 +3,23 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
+import RecipeList from "./components/RecipeList";
 
 function App() {
   return (
     <>
       <div className="App">
         <div className="homepage">
-          <div className="navbar">
+          <div>
             <Navbar />
           </div>
-          <div className="footer">
+          <div>
+            <RecipeList />
+          </div>
+          <div>
             <Footer />
           </div>
-          <div className="sidebar">
+          <div>
             <Sidebar />
           </div>
         </div>

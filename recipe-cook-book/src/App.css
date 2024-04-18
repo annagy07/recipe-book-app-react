@@ -1,1 +1,26 @@
+.App {
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
 
+.homepage {
+  height: 100vh;
+  position: relative;
+}
+
+h1 {
+  color: rgb(38, 36, 40);
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  color: rgb(38, 36, 40);
+  font-size: 1em;
+  text-align: center;
+  margin: 10px 0 0;
+}
