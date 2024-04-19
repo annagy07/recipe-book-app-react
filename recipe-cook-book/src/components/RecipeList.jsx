@@ -19,6 +19,7 @@ function RecipeList() {
         if (recipe.isCompleted === true) {
           return (
             <div className="recipeCard" key={recipe.id}>
+              
               <RecipeCard recipe={recipe} />
               <button
                 onClick={() => deleteRecipe(recipe.id)}
