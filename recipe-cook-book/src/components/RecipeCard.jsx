@@ -5,13 +5,13 @@ function RecipeCard(props) {
   const { recipe } = props;
 
   return (
-    <Link to={`/recipe/${recipe.id}`} className="block">
+    <NavLink to={`/recipe/${recipe.id}`} className="nav-link">
       <div>
         <h3>{recipe.name}</h3>
         <img src={recipe.image} alt={recipe.name} />
         <p>Calories: {recipe.calories}</p>
       </div>
-    </Link>
+    </NavLink>
   );
 }
 

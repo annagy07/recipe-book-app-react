@@ -5,15 +5,14 @@ function Sidebar() {
   return (
     <aside className="sidebar">
       <ul className="menu">
-        <li className="sidebar-link">
-          <a href="/">HOME</a>
-          <br></br>
-        </li>
-        <li className="sidebar-link">
-          <a href="#" className="sidebar-link">
-            ABOUT
-          </a>
-        </li>
+        <NavLink to="/" className="nav-link">
+          <li className="sidebar-link">HOME</li>
+          <br />
+        </NavLink>
+        <NavLink to="/about" className="nav-link">
+          <li className="sidebar-link">ABOUT</li>
+          <br />
+        </NavLink>
       </ul>
     </aside>
   );

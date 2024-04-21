@@ -7,6 +7,8 @@ import RecipeList from "./components/RecipeList";
 import { Routes, Route } from "react-router-dom";
 import RecipeDetailsPage from "./pages/RecipeDetailsPage";
 import Homepage from "./pages/Homepage";
+import About from "./pages/About";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -22,9 +24,11 @@ function App() {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/recipe/:recipeId" element={<RecipeDetailsPage />} />
+              <Route path="/about" element={<About />} />
+
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </div>
-          <div>{/* <RecipeList /> */}</div>
         </div>
       </div>
     </>

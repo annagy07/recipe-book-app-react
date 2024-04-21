@@ -1,13 +1,20 @@
 .recipeCard {
   border: 1px solid grey;
   box-shadow: 0px 2px 3px grey;
-  width: 400px;
+  width: 500px;
   text-align: center;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 40px;
   border-radius: 4px;
 }
 
+.recipeCard h3 {
+  margin-top: 0;
+}
+
 .recipeCard img {
-  width: 60px;
+  width: 80px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 10px;
 }
