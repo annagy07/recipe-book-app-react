@@ -1,0 +1,10 @@
+.add-recipe {
+  border: 1px solid grey;
+  box-shadow: 0px 2px 3px grey;
+  width: 500px;
+  padding: 40px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto; /* Centers the box */
+  margin-top: 90px; /* Keeps your bottom margin */
+}
