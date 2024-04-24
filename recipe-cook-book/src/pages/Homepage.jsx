@@ -6,7 +6,6 @@ import RecipeList from "../components/RecipeList";
 function Homepage() {
   // const [recipe, setRecipe] = useState(RecipeData);
 
-
   // const addRecipe = (newRecipe) => {
   //   // Create a new array
   //   const updatedRecipes = [...recipes, newRecipe];
@@ -19,8 +18,7 @@ function Homepage() {
 
   return (
     <div>
-      <div>
-      </div>
+      <div></div>
       <div>
         <RecipeList />
       </div>

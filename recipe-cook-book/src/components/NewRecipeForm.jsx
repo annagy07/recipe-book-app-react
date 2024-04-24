@@ -9,6 +9,7 @@ function NewRecipeForm(props) {
   const [servings, setServings] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
   const [ingredients, setIngredients] = useState([""]);
+  const [directions, setDirections] = useState([""]);
 
   const handleNameInput = (e) => setName(e.target.value);
 
@@ -30,6 +31,7 @@ function NewRecipeForm(props) {
       servings,
       isCompleted,
       ingredients,
+      directions,
     };
     console.log("Submitted: ", newRecipe);
     props.addRecipe(newRecipe);
@@ -41,18 +43,29 @@ function NewRecipeForm(props) {
     setServings(0);
     setIsCompleted(false);
     setIngredients([""]);
+    setDirections([""]);
   };
 
-  // Füge ein neues Input-Feld hinzu
-  const addInput = () => {
+  // Neue Input Feld bei Zutaten
+  const addInputIngredient = () => {
     setIngredients([...ingredients, ""]);
   };
 
-  // Aktualisiere den Wert eines bestimmten Input-Feldes
   const handleIngredientsInput = (index, event) => {
     const newInputs = [...ingredients];
     newInputs[index] = event.target.value;
     setIngredients(newInputs);
+  };
+
+  // Neue Input Feld bei Anweisungen
+  const addInputDirections = () => {
+    setDirections([...directions, ""]);
+  };
+
+  const handleDirectionsInput = (index, event) => {
+    const newInputs = [...directions];
+    newInputs[index] = event.target.value;
+    setDirections(newInputs);
   };
 
   return (
@@ -119,10 +132,33 @@ function NewRecipeForm(props) {
               onChange={(event) => handleIngredientsInput(index, event)}
             />
           ))}
-          <button type="button" onClick={addInput} className="plus-btn">
+          <button
+            type="button"
+            onClick={addInputIngredient}
+            className="plus-btn"
+          >
             +
           </button>
         </div>
+
+        <div className="form-item">
+          <label>Instructions: </label>
+          {directions.map((direction, index) => (
+            <input
+              key={index}
+              value={direction}
+              onChange={(event) => handleDirectionsInput(index, event)}
+            />
+          ))}
+          <button
+            type="button"
+            onClick={addInputDirections}
+            className="plus-btn"
+          >
+            +
+          </button>
+        </div>
+
         <button type="submit" className="submit-btn">
           Add a Recipe
         </button>

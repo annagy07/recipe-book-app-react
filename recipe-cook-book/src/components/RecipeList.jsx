@@ -1,14 +1,19 @@
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RecipeData from "../recipe-list.json";
 import RecipeCard from "./RecipeCard";
 import "./RecipeList.css";
 import NewRecipeForm from "../components/NewRecipeForm";
-import { Link, NavLink } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 function RecipeList() {
-  const [recipes, setRecipes] = useState(RecipeData);
+  const [recipes, setRecipes] = useState(
+    JSON.parse(localStorage.getItem("recipes")) || RecipeData
+  );
+
+  useEffect(() => {
+    // Update local storage whenever recipes state changes
+    localStorage.setItem("recipes", JSON.stringify(recipes));
+  }, [recipes]);
 
   const deleteRecipe = (recipeId) => {
     const filteredRecipes = recipes.filter((recipe) => recipe.id !== recipeId);
@@ -27,21 +32,26 @@ function RecipeList() {
       <div className="recipeList">
         {recipes.map((recipe) => (
           <div className="recipeCard" key={recipe.id}>
-            <NavLink to={`/recipe/${recipe.id}`} className="nav-link" >
-              <RecipeCard recipe={recipe} />
+            <NavLink to={`/recipe/${recipe.id}`} className="nav-link">
+              <RecipeCard recipe={recipe} recipes={recipes} />
             </NavLink>
-            <button onClick={() => deleteRecipe(recipe.id)} className="btn-delete">
+            <button
+              onClick={() => deleteRecipe(recipe.id)}
+              className="btn-delete"
+            >
               Delete
             </button>
           </div>
         ))}
       </div>
+      <button>
+        Reset Recipes
+      </button>
     </div>
   );
 }
 
 export default RecipeList;
-
 
 // function RecipeList() {
 //   const [recipes, setRecipe] = useState(RecipeData);
@@ -91,4 +101,3 @@ export default RecipeList;
 // }
 
 // export default RecipeList;
-

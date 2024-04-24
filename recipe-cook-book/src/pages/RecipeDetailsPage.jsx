@@ -3,13 +3,27 @@ import { useParams } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import RecipeData from "../recipe-list.json";
 
-function RecipeDetailsPage() {
+function RecipeDetailsPage(props) {
+  // const { recipes } = props
   const { recipeId } = useParams();
-  const [recipeDetails, setrecipeDetails] = useState(null);
+  const [recipeDetails, setRecipeDetails] = useState(null);
+
+  // useEffect(() => {
+  //   const currentRecipe = RecipeData.find((recipe) => recipe.id === recipeId);
+  //   setrecipeDetails(currentRecipe);
+  // }, [recipeId]);
 
   useEffect(() => {
-    const recipe = RecipeData.find((recipe) => recipe.id === recipeId);
-    setrecipeDetails(recipe);
+    // Try to load recipes from local storage
+    const loadedRecipes = JSON.parse(localStorage.getItem("recipes"));
+    // Fall back to the static data if there's nothing in local storage
+    const allRecipes = loadedRecipes || RecipeData;
+    // Find the current recipe by id
+    const currentRecipe = allRecipes.find(
+      (recipe) => recipe.id.toString() === recipeId
+    );
+    setRecipeDetails(currentRecipe);
+    console.log(currentRecipe);
   }, [recipeId]);
 
   return (

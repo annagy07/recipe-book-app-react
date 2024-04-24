@@ -6,11 +6,11 @@ function RecipeCard(props) {
 
   return (
     // <NavLink to={`/recipe/${recipe.id}`} className="nav-link">
-      <div>
-        <h3>{recipe.name}</h3>
-        <img src={recipe.image} alt={recipe.name} />
-        <p>Calories: {recipe.calories}</p>
-      </div>
+    <div>
+      <h3>{recipe.name}</h3>
+      <img src={recipe.image} alt={recipe.name} />
+      <p>Calories: {recipe.calories}</p>
+    </div>
     // </NavLink>
   );
 }
