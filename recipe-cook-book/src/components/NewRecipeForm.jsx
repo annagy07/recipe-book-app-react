@@ -23,6 +23,7 @@ function NewRecipeForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newRecipe = {
+      id: new Date().getTime().toString(),
       name,
       calories,
       image,
@@ -39,6 +40,7 @@ function NewRecipeForm(props) {
     setImage("");
     setServings(0);
     setIsCompleted(false);
+    setIngredients([""]);
   };
 
   // Füge ein neues Input-Feld hinzu
@@ -54,11 +56,11 @@ function NewRecipeForm(props) {
   };
 
   return (
-    <div className="AddMovie">
-      <h4>Add a Movie</h4>
+    <div className="AddRecipe">
+      <h4>Add a Recipe</h4>
 
       <form onSubmit={handleSubmit} className="add-recipe">
-        <div>
+        <div className="form-item">
           <label>Name: </label>
           <input
             type="text"
@@ -68,17 +70,7 @@ function NewRecipeForm(props) {
           />
         </div>
 
-        <div>
-          <label>Calories: </label>
-          <input
-            type="number"
-            name="calories"
-            value={calories}
-            onChange={handleCaloriesInput}
-          />
-        </div>
-
-        <div>
+        <div className="form-item">
           <label>Image: </label>
           <input
             type="text"
@@ -88,7 +80,17 @@ function NewRecipeForm(props) {
           />
         </div>
 
-        <div>
+        <div className="form-item">
+          <label>Calories: </label>
+          <input
+            type="number"
+            name="calories"
+            value={calories}
+            onChange={handleCaloriesInput}
+          />
+        </div>
+
+        <div className="form-item">
           <label>Servings: </label>
           <input
             type="number"
@@ -98,7 +100,7 @@ function NewRecipeForm(props) {
           />
         </div>
 
-        <div>
+        <div className="form-item">
           <label>Is Complete? </label>
           <input
             type="checkbox"
@@ -108,7 +110,7 @@ function NewRecipeForm(props) {
           />
         </div>
 
-        <div>
+        <div className="form-item">
           <label>Ingredients: </label>
           {ingredients.map((ingredient, index) => (
             <input
@@ -117,11 +119,13 @@ function NewRecipeForm(props) {
               onChange={(event) => handleIngredientsInput(index, event)}
             />
           ))}
-          <button type="button" onClick={addInput}>
+          <button type="button" onClick={addInput} className="plus-btn">
             +
           </button>
         </div>
-        <button type="submit">Add a Recipe</button>
+        <button type="submit" className="submit-btn">
+          Add a Recipe
+        </button>
       </form>
     </div>
   );
