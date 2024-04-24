@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   height: 100vh;
+  cursor: url("/recipe-cook-book/src/assets/anna_smile.png"), auto;
 }
 
 .nav-link,
@@ -12,6 +13,7 @@
 .nav-link:active {
   text-decoration: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .homepage {
@@ -97,4 +99,8 @@ hr {
 
 .about-me-text {
   padding: 30px 400px;
+}
+
+.ingredients {
+  margin-top: 20px;
 }

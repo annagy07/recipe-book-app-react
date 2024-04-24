@@ -40,7 +40,7 @@ function RecipeDetailsPage(props) {
               Calories: {recipeDetails.calories}
             </p>
           </div>
-          <div>
+          <div className="ingredients">
             <h4>INGREDIENTS</h4>
             <ul>
               {recipeDetails.ingredients.map((ingredient, index) => (
@@ -49,8 +49,8 @@ function RecipeDetailsPage(props) {
             </ul>
           </div>
           <hr />
-          <div>
-            <h4>INSTRUCTIONS</h4>
+          <div className="ingredients">
+            <h4>DIRECTIONS</h4>
             <ol>
               {recipeDetails.directions.map((step, index) => (
                 <li key={index}>{step}</li>

@@ -21,6 +21,54 @@ function NewRecipeForm(props) {
 
   const handleIsCompletedInput = (e) => setIsCompleted(e.target.checked);
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const newRecipe = {
+  //     id: new Date().getTime().toString(),
+  //     name,
+  //     calories,
+  //     image,
+  //     servings,
+  //     isCompleted,
+  //     ingredients,
+  //     directions,
+  //   };
+  //   console.log("Submitted: ", newRecipe);
+  //   props.addRecipe(newRecipe);
+
+  //   // Reset the state
+  //   setName("");
+  //   setCalories(0);
+  //   setImage("");
+  //   setServings(0);
+  //   setIsCompleted(false);
+  //   setIngredients([""]);
+  //   setDirections([""]);
+  // };
+
+  // Neue Input Feld bei Zutaten
+  const addInputIngredient = () => {
+    setIngredients([...ingredients, ""]);
+  };
+
+  const handleIngredientsInput = (index, event) => {
+    const newInputs = [...ingredients];
+    newInputs[index] = event.target.value;
+    setIngredients(newInputs);
+  };
+
+  // Neue Input Feld bei Anweisungen
+  const addInputDirections = () => {
+    setDirections([...directions, ""]);
+  };
+
+  const handleDirectionsInput = (index, event) => {
+    const newInputs = [...directions];
+    newInputs[index] = event.target.value;
+    setDirections(newInputs);
+  };
+
+  // Create new recipe when submitted
   const handleSubmit = (e) => {
     e.preventDefault();
     const newRecipe = {
@@ -44,28 +92,6 @@ function NewRecipeForm(props) {
     setIsCompleted(false);
     setIngredients([""]);
     setDirections([""]);
-  };
-
-  // Neue Input Feld bei Zutaten
-  const addInputIngredient = () => {
-    setIngredients([...ingredients, ""]);
-  };
-
-  const handleIngredientsInput = (index, event) => {
-    const newInputs = [...ingredients];
-    newInputs[index] = event.target.value;
-    setIngredients(newInputs);
-  };
-
-  // Neue Input Feld bei Anweisungen
-  const addInputDirections = () => {
-    setDirections([...directions, ""]);
-  };
-
-  const handleDirectionsInput = (index, event) => {
-    const newInputs = [...directions];
-    newInputs[index] = event.target.value;
-    setDirections(newInputs);
   };
 
   return (
@@ -127,6 +153,7 @@ function NewRecipeForm(props) {
           <label>Ingredients: </label>
           {ingredients.map((ingredient, index) => (
             <input
+              className="input-field"
               key={index}
               value={ingredient}
               onChange={(event) => handleIngredientsInput(index, event)}
@@ -142,9 +169,10 @@ function NewRecipeForm(props) {
         </div>
 
         <div className="form-item">
-          <label>Instructions: </label>
+          <label>Directions: </label>
           {directions.map((direction, index) => (
             <input
+              className="input-field"
               key={index}
               value={direction}
               onChange={(event) => handleDirectionsInput(index, event)}
@@ -160,7 +188,7 @@ function NewRecipeForm(props) {
         </div>
 
         <button type="submit" className="submit-btn">
-          Add a Recipe
+          Add Recipe
         </button>
       </form>
     </div>

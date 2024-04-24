@@ -5,3 +5,17 @@
   justify-content: center;
   padding: 70px 0 70px;
 }
+
+.reset-btn {
+  text-align: center;
+  margin: 0 200px 70px;
+}
+
+.btn-delete {
+  margin-top: 10px;
+  background-color: blueviolet;
+  color: white;
+  border: 1px black solid;
+  padding: 5px 15px;
+  border-radius: 4px;
+}

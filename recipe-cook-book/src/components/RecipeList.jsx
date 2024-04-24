@@ -30,23 +30,25 @@ function RecipeList() {
     <div>
       <NewRecipeForm addRecipe={addRecipe} />
       <div className="recipeList">
-        {recipes.map((recipe) => (
-          <div className="recipeCard" key={recipe.id}>
-            <NavLink to={`/recipe/${recipe.id}`} className="nav-link">
-              <RecipeCard recipe={recipe} recipes={recipes} />
-            </NavLink>
-            <button
-              onClick={() => deleteRecipe(recipe.id)}
-              className="btn-delete"
-            >
-              Delete
-            </button>
-          </div>
-        ))}
+        {recipes
+          .filter((recipe) => recipe.isCompleted)
+          .map((recipe) => (
+            <div className="recipeCard" key={recipe.id}>
+              <NavLink to={`/recipe/${recipe.id}`} className="nav-link">
+                <RecipeCard recipe={recipe} recipes={recipes} />
+              </NavLink>
+              <button
+                onClick={() => deleteRecipe(recipe.id)}
+                className="btn-delete"
+              >
+                Delete
+              </button>
+            </div>
+          ))}
       </div>
-      <button>
+      {/* <button className="reset-btn" onClick={localStorage.clear()}>
         Reset Recipes
-      </button>
+      </button> */}
     </div>
   );
 }
