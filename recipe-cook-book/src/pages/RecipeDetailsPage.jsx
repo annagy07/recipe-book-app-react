@@ -26,6 +26,8 @@ function RecipeDetailsPage(props) {
     console.log(currentRecipe);
   }, [recipeId]);
 
+  console.log(recipeDetails);
+
   return (
     <div className="details-container">
       {recipeDetails && (
@@ -49,13 +51,21 @@ function RecipeDetailsPage(props) {
             </ul>
           </div>
           <hr />
-          <div className="ingredients">
+          <div className="directions">
             <h4>DIRECTIONS</h4>
             <ol>
               {recipeDetails.directions.map((step, index) => (
                 <li key={index}>{step}</li>
               ))}
             </ol>
+          </div>
+          <div className="detail-page-btn-container">
+            <NavLink to={`/`}>
+              <button className="detail-page-btn">Back to overview</button>
+            </NavLink>
+            <NavLink to={`/edit/${recipeDetails.id}`}>
+              <button className="detail-page-btn">Edit Recipe</button>
+            </NavLink>
           </div>
         </>
       )}

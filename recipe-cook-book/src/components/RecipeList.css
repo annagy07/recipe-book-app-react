@@ -13,8 +13,8 @@
 
 .btn-delete {
   margin-top: 10px;
-  background-color: blueviolet;
-  color: white;
+  background-color: rgb(225, 222, 222);
+  color: black;
   border: 1px black solid;
   padding: 5px 15px;
   border-radius: 4px;

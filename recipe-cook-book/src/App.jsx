@@ -9,6 +9,8 @@ import RecipeDetailsPage from "./pages/RecipeDetailsPage";
 import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import NotFoundPage from "./pages/NotFoundPage";
+import EditRecipe from "./pages/EditRecipe";
+
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
               <Route path="/" element={<Homepage />} />
               <Route path="/recipe/:recipeId" element={<RecipeDetailsPage />} />
               <Route path="/about" element={<About />} />
+              <Route path="/edit/:recipeId" element={<EditRecipe />} />
 
               <Route path="*" element={<NotFoundPage />} />
             </Routes>

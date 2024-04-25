@@ -140,16 +140,6 @@ function NewRecipeForm(props) {
         </div>
 
         <div className="form-item">
-          <label>Is Complete? </label>
-          <input
-            type="checkbox"
-            name="isCompleted"
-            checked={isCompleted}
-            onChange={handleIsCompletedInput}
-          />
-        </div>
-
-        <div className="form-item">
           <label>Ingredients: </label>
           {ingredients.map((ingredient, index) => (
             <input
@@ -185,6 +175,15 @@ function NewRecipeForm(props) {
           >
             +
           </button>
+        </div>
+        <div className="form-item">
+          <label>Is Complete? </label>
+          <input
+            type="checkbox"
+            name="isCompleted"
+            checked={isCompleted}
+            onChange={handleIsCompletedInput}
+          />
         </div>
 
         <button type="submit" className="submit-btn">

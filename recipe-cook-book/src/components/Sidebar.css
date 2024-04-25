@@ -22,4 +22,5 @@
 .menu {
   margin-top: 130px;
   list-style-type: none;
+  padding-left: 0;
 }

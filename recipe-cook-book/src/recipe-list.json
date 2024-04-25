@@ -1,122 +1,172 @@
 [
   {
-    "id": "9e7f0d61-aa6b-418a-b56a-6418d19e6e1d",
-    "name": "Pizza",
-    "calories": 400,
-    "image": "https://i.imgur.com/eTmWoAN.png",
-    "servings": 1,
+    "id": "a2a1d907-0b7d-4d4a-9de0-2c2b93f009ca",
+    "name": "Beef Bourguignon",
+    "calories": 450,
+    "image": "https://i.imgur.com/r2nMI6K.jpeg",
+    "servings": 6,
     "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
+    "ingredients": [
+      "1 kg beef chuck, cut into cubes",
+      "2 tbsp olive oil",
+      "1 large onion, diced",
+      "2 carrots, sliced",
+      "3 cloves garlic, minced",
+      "750 ml red wine",
+      "2 cups beef broth",
+      "2 tbsp tomato paste",
+      "1 bouquet garni (thyme, bay leaf, parsley)",
+      "200 g mushrooms, quartered",
+      "150 g bacon, chopped",
+      "Salt and freshly ground black pepper"
+    ],
+    "directions": [
+      "In a large pot, heat olive oil over medium heat. Add the bacon and cook until crisp. Remove bacon and set aside.",
+      "In the same pot, brown the beef cubes in batches to ensure they are seared on all sides. Set aside with bacon.",
+      "Add the onions and carrots to the pot and cook until softened. Stir in the garlic and cook for another minute.",
+      "Pour in the red wine, scraping the bottom of the pot to release any browned bits. Add the beef broth, tomato paste, and bouquet garni. Return the beef and bacon to the pot.",
+      "Bring to a simmer, then cover and cook on low heat for about 2 hours, or until the beef is tender.",
+      "In the last 30 minutes of cooking, add the mushrooms and continue to cook, uncovered, to thicken the sauce.",
+      "Season with salt and pepper to taste and serve hot."
+    ]
   },
   {
-    "id": "37e0b31d-63f4-4d42-9f4b-e9a0fc464d60",
-    "name": "Tuna Salad",
-    "calories": 150,
-    "image": "https://i.imgur.com/DupGBz5.jpg",
+    "id": "b2c8ee5d-5e88-4a3e-8526-6d6de245406f",
+    "name": "Chicken Tikka Masala",
+    "calories": 300,
+    "image": "https://i.imgur.com/dZzXWFQ.jpeg",
     "servings": 4,
     "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
+    "ingredients": [
+      "500 g chicken breast, cubed",
+      "250 ml yogurt",
+      "2 tbsp lemon juice",
+      "6 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "2 tbsp tikka masala spice mix",
+      "2 tbsp vegetable oil",
+      "1 large onion, finely chopped",
+      "1 can (400 g) crushed tomatoes",
+      "1 cup heavy cream",
+      "Fresh cilantro, chopped for garnish",
+      "Salt to taste"
+    ],
+    "directions": [
+      "In a bowl, combine the yogurt, lemon juice, two minced garlic cloves, half the ginger, and tikka masala spice mix. Add the chicken cubes, mix well, and marinate for at least 1 hour in the refrigerator.",
+      "Heat oil in a large skillet over medium heat. Add the onions and cook until they are soft and translucent. Add the remaining garlic and ginger, and cook for another minute.",
+      "Add the marinated chicken to the skillet and cook until the outside of the chicken is lightly charred and fully cooked.",
+      "Pour in the crushed tomatoes and cream, reduce the heat to low, and simmer for 15 minutes until the sauce thickens.",
+      "Season with salt, garnish with chopped cilantro, and serve with basmati rice or naan bread."
+    ]
   },
   {
-    "id": "b5eb5b5f-41b8-4f1f-8844-7a1a56a17df7",
-    "name": "Sweet Potato Mash",
-    "calories": 120,
-    "image": "https://i.imgur.com/hGraGyR.jpg",
-    "servings": 2,
-    "isCompleted": false,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
-  },
-  {
-    "id": "6c0f6f33-8c50-403d-9d1c-6ac9d8b77f29",
-    "name": "Gnocchi with Sage",
-    "calories": 500,
-    "image": "https://i.imgur.com/93ekwW0.jpg",
-    "servings": 2,
-    "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
-  },
-  {
-    "id": "f4b4d2bc-ff12-4f3f-b3b3-19d2f1682401",
-    "name": "Pot Roast",
+    "id": "c23f2cc8-4bfa-488b-a6d8-e3a1e1b013bf",
+    "name": "Vegetarian Lasagna",
     "calories": 350,
-    "image": "https://i.imgur.com/WCzJDWz.jpg",
-    "servings": 4,
-    "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
-  },
-  {
-    "id": "bf89c1db-5c5b-4262-9d1e-8a68f88c61d5",
-    "name": "Lasagna",
-    "calories": 750,
-    "image": "https://i.imgur.com/ClxOafl.jpg",
+    "image": "https://cdn.pixabay.com/photo/2016/02/18/16/59/lasagna-1207585_1280.jpg",
     "servings": 8,
     "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
+    "ingredients": [
+      "9 lasagna noodles, cooked",
+      "2 tbsp olive oil",
+      "1 onion, chopped",
+      "3 cloves garlic, minced",
+      "1 zucchini, sliced",
+      "1 red bell pepper, sliced",
+      "1 yellow bell pepper, sliced",
+      "200 g spinach leaves",
+      "500 g ricotta cheese",
+      "1 egg",
+      "2 cups mozzarella cheese, shredded",
+      "2 cups marinara sauce",
+      "Salt and pepper to taste"
+    ],
+    "directions": [
+      "Preheat oven to 375°F (190°C).",
+      "In a large skillet, heat the olive oil over medium heat. Add the onion and garlic, and sauté until soft. Add the zucchini, bell peppers, and spinach, and cook until the vegetables are just tender.",
+      "In a bowl, mix the ricotta cheese with the egg, salt, and pepper.",
+      "To assemble the lasagna, spread a thin layer of marinara sauce at the bottom of a baking dish. Layer three lasagna noodles, half of the ricotta mixture, half of the sautéed vegetables, and a third of the mozzarella. Repeat the layers, ending with noodles topped with marinara sauce and the remaining mozzarella.",
+      "Cover with foil and bake for 25 minutes. Remove the foil and bake for an additional 25 minutes, or until the cheese is bubbly and golden.",
+      "Let stand for 10 minutes before slicing and serving."
+    ]
   },
   {
-    "id": "bca9beec-43d3-48b1-9b57-793a8a8c3520",
-    "name": "Hamburger",
-    "calories": 400,
-    "image": "https://i.imgur.com/LoG39wK.jpg",
-    "servings": 6,
-    "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
-  },
-  {
-    "id": "b777a69a-7f1c-41e8-8a4c-1d0e9e4cace8",
-    "name": "Pad Thai",
-    "calories": 475,
-    "image": "https://i.imgur.com/5ktcSzF.jpg",
+    "id": "d4a87b7a-ade9-44fe-a017-0a2f731d1fcf",
+    "name": "Salmon with Dill Sauce",
+    "calories": 270,
+    "image": "https://images.unsplash.com/photo-1577906096429-f73c2c312435",
     "servings": 4,
     "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
+    "ingredients": [
+      "4 salmon fillets, 150 g each",
+      "Salt and pepper to taste",
+      "1 tbsp olive oil",
+      "1 cup sour cream",
+      "1 tbsp fresh dill, chopped",
+      "1 tsp lemon zest",
+      "1 tbsp lemon juice",
+      "1 clove garlic, minced"
+    ],
+    "directions": [
+      "Preheat your oven to 400°F (200°C). Season the salmon fillets with salt and pepper.",
+      "Heat olive oil in a skillet over medium-high heat. Sear the salmon, skin-side up, for about 3 minutes until golden. Flip the salmon and transfer the skillet to the oven. Bake for 5-7 minutes or until the salmon is cooked through.",
+      "While the salmon is cooking, mix the sour cream, dill, lemon zest, lemon juice, and minced garlic in a bowl. Season with salt and pepper to taste.",
+      "Serve the salmon with a generous dollop of dill sauce and a side of steamed vegetables or potatoes."
+    ]
   },
   {
-    "id": "e1f87a2e-60b3-4a3f-bb48-20a396a9a94f",
-    "name": "Sarma",
+    "id": "e34a4bbc-a06e-4b4b-82a2-884ced44c754",
+    "name": "Thai Green Curry with Chicken",
+    "calories": 310,
+    "image": "https://images.unsplash.com/photo-1668665772043-bdd32e348998",
+    "servings": 4,
+    "isCompleted": true,
+    "ingredients": [
+      "2 tbsp vegetable oil",
+      "1 onion, sliced",
+      "2 tbsp green curry paste",
+      "400 ml coconut milk",
+      "500 g chicken breast, thinly sliced",
+      "1 zucchini, sliced",
+      "1 red bell pepper, sliced",
+      "1 tbsp fish sauce",
+      "1 tsp sugar",
+      "Fresh basil leaves",
+      "Steamed jasmine rice, to serve"
+    ],
+    "directions": [
+      "Heat the oil in a wok or large frying pan over medium-high heat. Add the onion and curry paste and fry for 2 minutes.",
+      "Add the chicken and cook, stirring constantly until it is white all over.",
+      "Pour in the coconut milk, bring to a boil, then reduce the heat and simmer for 10 minutes.",
+      "Add the zucchini and bell pepper and cook for another 5 minutes, or until the vegetables are tender and the chicken is cooked through.",
+      "Stir in the fish sauce and sugar, and sprinkle with fresh basil leaves before serving with steamed jasmine rice."
+    ]
+  },
+  {
+    "id": "f5f5c3a1-491e-4e7f-9d8a-8b152d6e4dfe",
+    "name": "Classic Ratatouille",
     "calories": 200,
-    "image": "https://i.imgur.com/yOlf4Fj.jpg",
-    "servings": 4,
-    "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
-  },
-  {
-    "id": "bbfd30fd-cd75-4e3b-8fc8-3d3fd62a3c39",
-    "name": "Hot Dog",
-    "calories": 275,
-    "image": "https://i.imgur.com/QqVHdRu.jpg",
-    "servings": 1,
-    "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
-  },
-  {
-    "id": "1c6d5b5f-4e72-4136-8c6c-9cf3e3d16a65",
-    "name": "Chocolate Cake",
-    "calories": 490,
-    "image": "https://i.imgur.com/yrgzA9x.jpg",
+    "image": "https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c",
     "servings": 6,
-    "isCompleted": false,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
-  },
-  {
-    "id": "07d9616d-7a63-457c-b8a7-58f6a70a67e3",
-    "name": "Wheat Bread",
-    "calories": 175,
-    "image": "https://i.imgur.com/TsWzMfM.jpg",
-    "servings": 2,
     "isCompleted": true,
-    "ingredients": ["Ingred1", "Ingred2", "Ingred3"],
-    "directions": ["Step1", "Step2", "Step3", "Step4"]
+    "ingredients": [
+      "1 eggplant, cubed",
+      "2 zucchinis, cubed",
+      "1 yellow squash, cubed",
+      "1 red onion, chopped",
+      "1 red bell pepper, chopped",
+      "2 cloves garlic, minced",
+      "3 tomatoes, chopped",
+      "1/4 cup olive oil",
+      "Salt and pepper to taste",
+      "Fresh thyme and rosemary, chopped"
+    ],
+    "directions": [
+      "Preheat the oven to 375°F (190°C).",
+      "In a large baking dish, combine the eggplant, zucchinis, squash, onion, bell pepper, and garlic. Drizzle with olive oil and season with salt, pepper, and herbs.",
+      "Toss to coat evenly and roast in the oven for 45 minutes, stirring occasionally, until the vegetables are tender and lightly caramelized.",
+      "Add the tomatoes and roast for another 15 minutes.",
+      "Serve warm, topped with additional fresh herbs if desired."
+    ]
   }
 ]
