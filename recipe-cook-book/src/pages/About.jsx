@@ -1,6 +1,7 @@
 function AbouPage() {
   return (
     <div className="about-container">
+      <img src="../src/assets/mac.png" className="about-me-img"/>
       <h3>Hi there! :)</h3>
       <p className="about-me-text">
         I'm the Cologne native turned Berliner who's bravely navigating the
