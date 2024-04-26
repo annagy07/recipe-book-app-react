@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import RecipeData from "../recipe-list.json";
 
 function EditRecipe(props) {
-  const { recipes } = props;
+//   const { recipes } = props;
   const { recipeId } = useParams();
 
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ function EditRecipe(props) {
   const handleSave = (e) => {
     e.preventDefault();
     const updatedRecipe = {
-      id: recipeId, // Assuming recipeId is already a string
+      id: recipeId, 
       name,
       image,
       calories,

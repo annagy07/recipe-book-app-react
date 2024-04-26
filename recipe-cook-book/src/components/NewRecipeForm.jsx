@@ -21,30 +21,6 @@ function NewRecipeForm(props) {
 
   const handleIsCompletedInput = (e) => setIsCompleted(e.target.checked);
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const newRecipe = {
-  //     id: new Date().getTime().toString(),
-  //     name,
-  //     calories,
-  //     image,
-  //     servings,
-  //     isCompleted,
-  //     ingredients,
-  //     directions,
-  //   };
-  //   console.log("Submitted: ", newRecipe);
-  //   props.addRecipe(newRecipe);
-
-  //   // Reset the state
-  //   setName("");
-  //   setCalories(0);
-  //   setImage("");
-  //   setServings(0);
-  //   setIsCompleted(false);
-  //   setIngredients([""]);
-  //   setDirections([""]);
-  // };
 
   // Neue Input Feld bei Zutaten
   const addInputIngredient = () => {

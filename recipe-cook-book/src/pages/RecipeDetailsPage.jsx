@@ -4,14 +4,8 @@ import { NavLink } from "react-router-dom";
 import RecipeData from "../recipe-list.json";
 
 function RecipeDetailsPage(props) {
-  // const { recipes } = props
   const { recipeId } = useParams();
   const [recipeDetails, setRecipeDetails] = useState(null);
-
-  // useEffect(() => {
-  //   const currentRecipe = RecipeData.find((recipe) => recipe.id === recipeId);
-  //   setrecipeDetails(currentRecipe);
-  // }, [recipeId]);
 
   useEffect(() => {
     // Try to load recipes from local storage
